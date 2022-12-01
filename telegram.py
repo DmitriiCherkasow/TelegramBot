@@ -16,7 +16,7 @@ current_datetime = datetime.now().strftime("%d.%m.%y %H:%M:%S")
 
 @bot.message_handler(commands=['start'])
 def start_message(message: telebot.types.Message):
-    text = (f'Добро пожаловать в бот калькулятор валют,{message.chat.username},'f' для получения всей инофрмации '
+    text = (f'Добро пожаловать в бот калькулятор валют,{message.chat.first_name},'f' для получения всей инофрмации '
             'пользуйтесь командой /help')
     bot.send_message(message.chat.id, text)
 

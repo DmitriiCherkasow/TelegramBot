@@ -42,7 +42,7 @@ class Convertor:
 
         response = requests.get(url, headers=headers)
         resp = json.loads(response.content)
-        new_price = resp
-        message = f"Цена {amount} {base} в {quote} : {new_price}"
+        d = resp['result']
+        message = f"Цена {amount} {base} в {quote} : {d}"
 
         return message
