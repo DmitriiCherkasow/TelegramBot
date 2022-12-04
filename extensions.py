@@ -38,7 +38,7 @@ class Convertor:
         url = f"https://api.apilayer.com/currency_data/convert?to={quote_key}&from={base_key}&amount={amount}"
 
         payload = {}
-        headers = {"apikey": "yCb16Cp4WidBEpJZRyp1RyjKCmHZCCrQ"}
+        headers = {"apikey": "Введи свой токен API"}
 
         response = requests.get(url, headers=headers)
         resp = json.loads(response.content)

@@ -1,4 +1,4 @@
-TOKEN = "5972595070:AAFqyb35rHoNtH6dWjmiwsUSWDZuoNjidjc"
+TOKEN = "Введи свой токен Telegram"
 exchanges = {
     'доллар': 'USD',
     'евро': 'EUR',
